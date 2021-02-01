@@ -56,10 +56,11 @@ class WallServiceTest {
                         false, 0,
                         placeholder = Placeholder(false),
                         false, "text"))
-        post.id = 1
+//        post.id = 1
         //Act
+        add(post)
         val expectedResults: Boolean = update(
-            postId = 1
+            postId = 0
         )
         //Assert
         assertTrue(expectedResults)
